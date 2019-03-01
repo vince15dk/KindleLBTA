@@ -15,9 +15,35 @@ class ViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableView.register(BookCell.self, forCellReuseIdentifier: "cellId")
+        tableView.tableFooterView = UIView()
+        
         navigationItem.title = "Kindle"
-        view.backgroundColor = .red
         setupBooks()
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cellId", for: indexPath)
+       
+        let book = books?[indexPath.row]
+        
+        cell.textLabel?.text = book?.title
+        cell.imageView?.image = book?.image
+        
+        return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if let count = books?.count {
+              return count
+        }
+        return 0
+
     }
     
     
@@ -28,35 +54,17 @@ class ViewController: UITableViewController {
         
         let pages = [page1, page2]
         
-        let book1 = Book(title: "Steve jobs", author: "Walter Lsaacson", pages: pages  )
+        let book1 = Book(title: "Steve jobs", author: "Walter Lsaacson", pages: pages, image: #imageLiteral(resourceName: "steve_jobs")  )
         
         
         let book2 = Book(title: "Bill Gates: A Biography", author: "Michael Becraft", pages: [
             Page(number: 1, text: "first page"),Page(number: 2, text: "second page"),
             Page(number: 3, text: "third page"),
             Page(number: 4, text: "fourth page")
-            ])
+            ], image: #imageLiteral(resourceName: "bill_gates"))
         
         self.books = [book1, book2]
         
-        guard let bookCollection = self.books else { return }
-        
-        for book in bookCollection {
-            print("Title : \(book.title) Author: \(book.author)");
-            for page in book.pages {
-                print("Number: \(page.number) Text: \(page.text)")
-            }
-        }
-        
-        //        if let unwrappedBooks = self.books {
-        //            for book in unwrappedBooks {
-        //                print("Title : \(book.title) Author: \(book.author)");
-        //                for page in book.pages {
-        //                    print("Number: \(page.number) Text: \(page.text)")
-        //                }
-        //            }
-        //
-        //        }
         
     }
 

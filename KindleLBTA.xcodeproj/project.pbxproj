@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3373CF8D222911A500914C9F /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3373CF8C222911A500914C9F /* BookCell.swift */; };
 		338765872228E69100D9CBCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338765862228E69100D9CBCB /* AppDelegate.swift */; };
 		338765892228E69100D9CBCB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338765882228E69100D9CBCB /* ViewController.swift */; };
 		3387658E2228E69200D9CBCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3387658D2228E69200D9CBCB /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3373CF8C222911A500914C9F /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
 		338765832228E69100D9CBCB /* KindleLBTA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KindleLBTA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		338765862228E69100D9CBCB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		338765882228E69100D9CBCB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				3387658F2228E69200D9CBCB /* LaunchScreen.storyboard */,
 				338765922228E69200D9CBCB /* Info.plist */,
 				338765982228FD8100D9CBCB /* Models.swift */,
+				3373CF8C222911A500914C9F /* BookCell.swift */,
 			);
 			path = KindleLBTA;
 			sourceTree = "<group>";
@@ -134,6 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3373CF8D222911A500914C9F /* BookCell.swift in Sources */,
 				338765992228FD8100D9CBCB /* Models.swift in Sources */,
 				338765892228E69100D9CBCB /* ViewController.swift in Sources */,
 				338765872228E69100D9CBCB /* AppDelegate.swift in Sources */,
