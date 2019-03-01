@@ -8,35 +8,14 @@
 
 import UIKit
 
-class Book {
-    let title: String
-    let author: String
-    let pages: [Page]
-    
-    init(title:String, author:String, pages: [Page]) {
-        self.title = title
-        self.author = author
-        self.pages = pages
-    }
-}
-
-class Page {
-    let number : Int
-    let text : String
-    
-    init(number: Int, text:String){
-        self.number = number
-        self.text = text
-    }
-}
-
-class ViewController: UIViewController {
+class ViewController: UITableViewController {
 
     var books : [Book]?
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.title = "Kindle"
         view.backgroundColor = .red
         setupBooks()
     }
@@ -51,11 +30,6 @@ class ViewController: UIViewController {
         
         let book1 = Book(title: "Steve jobs", author: "Walter Lsaacson", pages: pages  )
         
-        //        for page in book1.pages {
-        //            if page.number == 1 {
-        //                print(page.text)
-        //            }
-        //        }
         
         let book2 = Book(title: "Bill Gates: A Biography", author: "Michael Becraft", pages: [
             Page(number: 1, text: "first page"),Page(number: 2, text: "second page"),
