@@ -11,10 +11,12 @@ import UIKit
 class Book {
     let title: String
     let author: String
+    let pages: [Page]
     
-    init(title:String, author:String) {
+    init(title:String, author:String, pages: [Page]) {
         self.title = title
         self.author = author
+        self.pages = pages
     }
 }
 
@@ -35,11 +37,19 @@ class ViewController: UIViewController {
         view.backgroundColor = .red
         
         let page1 = Page(number: 1, text: "Text for the first page")
-        let page2 = Page(number: 1, text: "This is text for second page")
+        let page2 = Page(number: 2, text: "This is text for second page")
+//        
+//        print(page1.text)
+//        print(page2.text)
         
-        let book = Book(title: "Steve jobs", author: "Walter Lsaacson")
-        print(book.title, book.author)
-        print("Title: \(book.title), aUTHOR: \(book.author)")
+        let pages = [page1, page2]
+        
+        let book = Book(title: "Steve jobs", author: "Walter Lsaacson", pages: pages  )
+//        print(book.title, book.author)
+//        print("Title: \(book.title), aUTHOR: \(book.author)")
+//
+        let firstPage = book.pages[0]
+        print(firstPage.text)
         
     }
 
