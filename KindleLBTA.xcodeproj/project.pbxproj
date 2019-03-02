@@ -14,6 +14,7 @@
 		3387658E2228E69200D9CBCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3387658D2228E69200D9CBCB /* Assets.xcassets */; };
 		338765912228E69200D9CBCB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3387658F2228E69200D9CBCB /* LaunchScreen.storyboard */; };
 		338765992228FD8100D9CBCB /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338765982228FD8100D9CBCB /* Models.swift */; };
+		33B5A905222A6F53006145DA /* PageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B5A904222A6F53006145DA /* PageCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		338765902228E69200D9CBCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		338765922228E69200D9CBCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		338765982228FD8100D9CBCB /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		33B5A904222A6F53006145DA /* PageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				338765982228FD8100D9CBCB /* Models.swift */,
 				3373CF8C222911A500914C9F /* BookCell.swift */,
 				3373CF8E22296D2400914C9F /* BookPageController.swift */,
+				33B5A904222A6F53006145DA /* PageCell.swift */,
 			);
 			path = KindleLBTA;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			files = (
 				3373CF8D222911A500914C9F /* BookCell.swift in Sources */,
 				338765992228FD8100D9CBCB /* Models.swift in Sources */,
+				33B5A905222A6F53006145DA /* PageCell.swift in Sources */,
 				338765892228E69100D9CBCB /* ViewController.swift in Sources */,
 				3373CF8F22296D2400914C9F /* BookPageController.swift in Sources */,
 				338765872228E69100D9CBCB /* AppDelegate.swift in Sources */,
